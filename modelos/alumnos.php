@@ -21,8 +21,8 @@ class Alumnos extends Conexion {
     }   
 
     public function guardar (){
-        $sql = "INSERT INTO alumnos($alum_nombres, alum_apellidos, alum_fecha_nac, alum_tel, alum_correo) 
-        values ('$this->producto_precio')";
+        $sql = "INSERT INTO alumnos(alum_nombres, alum_apellidos, alum_fecha_nac, alum_tel, alum_correo) 
+        values ('$this->alum_nombres', '$this->alum_apellidos', '$this->alum_fecha_nac', '$this->alum_tel', '$this->alum_correo')";
         $resultado = self::ejecutar($sql);
-    }   
+    }  
 }
