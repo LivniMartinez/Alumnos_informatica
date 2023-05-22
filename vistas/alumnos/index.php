@@ -19,18 +19,6 @@
     <div class="container">
         <h1 class="text-center">Formulario de registro de Alumnos de Informática</h1>
         <div class="row justify-content-center">
-        <div class="col-lg-6">
-        <?php if($resultado): ?>
-                    <div class="alert alert-success" role="alert">
-                        Guardado exitosamente!
-                    </div>
-                <?php else :?>
-                    <div class="alert alert-danger" role="alert">
-                        Ocurrió un error: <?= $error ?>
-                    </div>
-                <?php endif ?>
-        </div>
-        </div>
             <form action="/Alumnos_informatica/controladores/alumnos/guardar.php" method = "POST" class="col-lg-8 border bg-light p-3">
                 <div class="row mb-3">
                     <div class="col">
@@ -70,5 +58,8 @@
             </form>
         </div>
     </div>
+    <footer class="bg-dark text-white text-center p-3">
+    <p> Comando de Informática y Tecnología.</p>
+  </footer>
 </body>
 </html>

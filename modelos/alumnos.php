@@ -4,7 +4,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 require 'conexion.php';
 
-class alumnos extends Conexion {
+class Alumnos extends Conexion {
 
     public $alum_id;
     public $alum_nombres;
@@ -29,5 +29,6 @@ class alumnos extends Conexion {
         $sql = "INSERT INTO alumnos(alum_nombres, alum_apellidos, alum_fecha_nac, alum_tel, alum_correo) 
         values ('$this->alum_nombres', '$this->alum_apellidos', '$this->alum_fecha_nac', '$this->alum_tel', '$this->alum_correo')";
         $resultado = self::ejecutar($sql);
+        return $resultado;
     }  
 }
