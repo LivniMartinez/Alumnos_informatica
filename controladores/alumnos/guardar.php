@@ -7,8 +7,10 @@ require '../../modelos/alumnos.php';
 try {
     $alumnos = new alumnos($_POST);
     $resultado = $alumnos->guardar();
-    var_dump($resultado);
+    $error = "NO se guardó correctamente";
 } catch (PDOException $e) {
-    echo $e->getMessage();
+    $error = $e->getMessage();
+} catch (Exception $e2){
+    $error = $e2->getMessage();
 }
 
