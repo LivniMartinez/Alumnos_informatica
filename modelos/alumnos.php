@@ -1,5 +1,5 @@
 <?php
-require 'Conexion.php';
+require 'conexion.php';
 
 class Alumnos extends Conexion {
 
