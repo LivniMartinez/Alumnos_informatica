@@ -4,7 +4,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 require 'conexion.php';
 
-class Alumnos extends Conexion {
+class alumnos extends Conexion {
 
     public $alum_id;
     public $alum_nombres;

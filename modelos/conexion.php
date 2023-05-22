@@ -1,6 +1,6 @@
 <?php
 
-abstract class Conexion{
+abstract class conexion{
     public static $conexion = null;
 
     private static function conectar(){
