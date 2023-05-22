@@ -3,6 +3,7 @@ require 'Conexion.php';
 
 class Alumnos extends Conexion {
 
+    public $alum_id;
     public $alum_nombres;
     public $alum_apellidos;
     public $alum_fecha_nac;
@@ -12,6 +13,7 @@ class Alumnos extends Conexion {
 
     public function __construct ($argumentos = [])
     {
+        $this->alum_id = $argumentos ['alum_id'] ?? null;
         $this->alum_nombres = $argumentos ['alum_nombres'] ?? '';
         $this->alum_apellidos = $argumentos ['alum_apellidos'] ?? '';
         $this->alum_fecha_nac = $argumentos ['alum_fecha_nac'] ?? '';
